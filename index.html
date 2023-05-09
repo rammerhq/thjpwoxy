@@ -2,8 +2,13 @@
   <body>
     <script src="/css/main.css"></script>
     <script src="/css/search.css"></script>
-    <link rel="stylesheet" href="css/main.css:>
-    <script>
+    <link rel="stylesheet" href="css/main.css>
+     <div class="searchbar">
+    <form>
+      <input tag="searchbar" id="searchbar" placeholder="search" />
+    </form>
+  </div>
+ <script>
 const searchbar = document.getElementById("searchbar");
 
 searchbar.addEventListener("input", function() {
@@ -18,10 +23,10 @@ searchbar.addEventListener("input", function() {
   }
 });
 </script>
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
-    <script src=""></script>
+    <script src="/uv/search.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.handler.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="uv/uv.sw.js"></script>
   </body>
 </html>
