@@ -30,9 +30,6 @@
   opacity: 1;
 }
     </style>
-    <link rel="stylesheet" href="/css/main.css>
-      <link rel="stylesheet" href="/css/search.css>
-    <script src='./uv/search.js'></script>
       <style>
         h1 {
           text-align: center;
@@ -59,6 +56,22 @@ searchbar.addEventListener("input", function() {
   }
 });
 </script>
+    <script>
+      // JavaScript code
+function search_animal() {
+  let input = document.getElementById("searchbar").value;
+  input = input.toLowerCase();
+  let x = document.getElementsByClassName("animals");
+
+  for (i = 0; i < x.length; i++) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      x[i].style.display = "none";
+    } else {
+      x[i].style.display = "block";
+    }
+  }
+}
+    </script>
     <script src'./uv/go.js'></script>
     <script src='./uv/uv.bundle.js'></script>
     <script src='./uv/uv.config.js'></script>
